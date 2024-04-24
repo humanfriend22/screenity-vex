@@ -6,17 +6,17 @@ import CameraWrap from "./layout/CameraWrap";
 import { contentStateContext } from "../context/ContentState";
 
 const CameraOnly = (props) => {
-  const [contentState, setContentState] = useContext(contentStateContext);
+    const [contentState, setContentState] = useContext(contentStateContext);
 
-  return (
-    <div className="camera-page">
-      {contentState.defaultVideoInput != "none" &&
+    return (
+        <div className="camera-page">
+            {/* {contentState.defaultVideoInput != "none" &&
         contentState.cameraActive &&
         contentState.recordingType === "camera" && (
           <CameraWrap shadowRef={props.shadowRef} />
-        )}
-    </div>
-  );
+        )} */}
+        </div>
+    );
 };
 
 export default CameraOnly;
